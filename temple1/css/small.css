@@ -60,7 +60,7 @@ main h1 {
 }
 
 main figure img {
-    width: 450px;
+    width: 100%;
 }
 main figure {
     width: 100%;
