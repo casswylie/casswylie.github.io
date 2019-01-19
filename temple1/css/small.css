@@ -13,6 +13,9 @@ body {
     font-size: 16px;
 }
 
+#refanchor {
+    font-style: italic;
+}
 
 
 /* header rules here */
@@ -79,7 +82,11 @@ footer {
     padding: 1rem 2%;
     background-color: #3f2b34; /*purple*/
 }
-
+div.news {
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #ddd;
+}
 
 
 

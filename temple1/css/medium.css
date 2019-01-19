@@ -12,11 +12,9 @@
         padding-bottom: .5rem;
     }
 
-    div.news {
-        clear: both;
-        column-count: 2;
-        column-rule: 1px solid #ddd;
-    }
+   div.news {
+       column-count: 3;
+   }
 
 
 
