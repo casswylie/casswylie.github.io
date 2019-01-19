@@ -14,6 +14,7 @@ body {
 }
 
 
+
 /* header rules here */
 header {
     background-color: #3f2b34;
@@ -28,7 +29,7 @@ header h2 {
 
 
 nav {
-    background-color: #e9cfdc;
+    background-color: #e9cfdc; /*light pink*/
 }
 nav ul {
     margin= 0; padding: 0;
@@ -37,7 +38,7 @@ nav li {
     list-style-type: none;
 }
 nav li.active {
-    background-color: #bda9b3;
+    background-color: #9c8a93;
 }
 nav a {
     display: block;
