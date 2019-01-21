@@ -24,14 +24,13 @@ header {
     background-color: #3f2b34;
     padding: 1rem 2%;
 }
-header h1 {
+header h1 h2 {
     margin: 0;
     color: #faf7f0;
 }
-header h2 {
+/*header h2 {
     margin: 0;
-}
-
+}*/
 
 nav {
     background-color: #cfb5c2; /*light pink*/
