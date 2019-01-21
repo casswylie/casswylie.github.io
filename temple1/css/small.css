@@ -15,6 +15,7 @@ body {
 
 #refanchor {
     font-style: italic;
+    font-size: .8rem;
 }
 
 
@@ -25,6 +26,7 @@ header {
 }
 header h1 {
     margin: 0;
+    color: #faf7f0;
 }
 header h2 {
     margin: 0;
@@ -35,7 +37,7 @@ nav {
     background-color: #cfb5c2; /*light pink*/
 }
 nav ul {
-    margin: 0; padding: 0;
+    margin: 0; padding: 0 2%;
 }
 nav li {
     list-style-type: none;
@@ -81,6 +83,7 @@ footer {
     text-align: center;
     padding: 1rem 2%;
     background-color: #3f2b34; /*purple*/
+    color: #faf7f0;
 }
 div.news {
     clear: both;
