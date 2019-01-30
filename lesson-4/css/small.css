@@ -1,7 +1,7 @@
 /*------------HEADER----------*/
 header {
     background-color: #e87708;
-    font-family: "PT Sans Narrow Bold", Arial, sans-serif;
+    font-family: "PT Sans Narrow Bold", Helvetica, sans-serif;
 
 }
 header img {
@@ -50,7 +50,9 @@ nav ul li.active a {
 
 
 /*-------------MAIN----------------*/
-
+main {
+    font-family: "PT Sans Narrow", Helvetica, sans-serif;
+}
 
 
 
