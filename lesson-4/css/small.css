@@ -12,6 +12,7 @@ header img {
 header h1 {
     padding: 1.5rem 2% 0 2%;
     color: #ffffff;
+    margin-top: 0;
 }
 header h2 {
     padding: 0 2%;
@@ -52,6 +53,9 @@ nav ul li.active a {
 /*-------------MAIN----------------*/
 main {
     font-family: "PT Sans Narrow", Helvetica, sans-serif;
+}
+body {
+    margin: 0;
 }
 
 
