@@ -54,10 +54,20 @@ nav ul li.active a {
 /*-------------MAIN----------------*/
 main {
     font-family: "PT Sans Narrow", Helvetica, sans-serif;
-    margin: 0 2%;
+    /*margin: 0 2%;*/
 }
+
 h1, h2{
     color: #0086e8;
+}
+div.summary h5{
+    margin: 0;
+}
+div.summary {
+    position: absolute;
+    background-color: #959595;
+    padding: .5rem;
+    
 }
 figure {
     margin-left: 0;
@@ -73,19 +83,32 @@ figure.banner {
 body {
     margin: 0;
 }
-
-div.subfooter section:nth-child(1) {
-    float: left;
-}
-div.subfooter section:nth-child(2) {
-    float: right;
+div.row section {
+    padding: 2%;
 }
 
+div.subfooter {
+    padding: 2%;
+}
+div.row section:nth-child(2){
+    display: none;
+}
 
 
 
 /*--------------FOOTER--------------*/
+div.subfooter h5 {
+    margin: 0;
+}
 
+div.subfooter section:nth-child(1) {
+    width: 50%;
+    float: left;
+}
+div.subfooter section:nth-child(2) {
+    width: 50%;
+    float: right;
+}
 
 footer {
     color: #ffffff;

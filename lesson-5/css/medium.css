@@ -33,6 +33,16 @@ figure.banner img {
     margin-left: 0;
 }
 
+div.row section:nth-child(2){
+    display: inline;
+    width: 46%;
+    float: left;
+}
+div.row section:nth-child(3){
+    width: 46%;
+    float: left;
+}
+
 /*-------------FOOTER---------------*/
 
 
