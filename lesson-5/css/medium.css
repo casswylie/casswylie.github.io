@@ -38,7 +38,7 @@ div.row section:nth-child(2){
     float: left;
     width: 100%;
 }
-div.row section:nth-child(3){}
+div.row section:nth-child(3){
     float: left;
     clear: both;
     
