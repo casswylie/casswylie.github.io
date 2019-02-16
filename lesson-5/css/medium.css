@@ -35,12 +35,13 @@ figure.banner img {
 
 div.row section:nth-child(2){
     display: inline;
-    width: 46%;
     float: left;
+    width: 100%;
 }
-div.row section:nth-child(3){
-    width: 46%;
+div.row section:nth-child(3){}
     float: left;
+    clear: both;
+    
 }
 
 /*-------------FOOTER---------------*/
