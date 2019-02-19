@@ -46,7 +46,15 @@ div.row section:nth-child(3){
 
 /*-------------FOOTER---------------*/
 
-
+div.subfooter section:nth-child(1) {
+    width: 50%;
+    float: left;
+    
+}
+div.subfooter section:nth-child(2) {
+    width: 50%;
+    float: right;
+}
 
 
 
