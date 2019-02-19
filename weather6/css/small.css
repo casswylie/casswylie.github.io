@@ -111,13 +111,8 @@ div.subfooter h5 {
     margin: 0;
 }
 
-div.subfooter section:nth-child(1) {
-    width: 50%;
-    float: left;
-}
-div.subfooter section:nth-child(2) {
-    width: 50%;
-    float: right;
+div.subfooter section:nth-child(1){
+    margin-bottom: 1rem;
 }
 
 footer {
