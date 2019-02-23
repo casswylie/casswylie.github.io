@@ -1,0 +1,137 @@
+/*------------HEADER----------*/
+
+header {
+    background-color: #e87708;
+    font-family: "PT Sans Narrow Bold", Helvetica, sans-serif;
+
+}
+header img {
+    float: left;
+    padding: 0 2%;
+    width: 125px;
+}
+header h1 {
+    padding: 1.5rem 2% 0 2%;
+    color: #ffffff;
+    margin-top: 0;
+}
+header h2 {
+    padding: 0 2%;
+    color: #ffffff;
+}
+/*.motto {
+    padding: 0 2%;
+    color: #ffffff;
+}*/
+
+/*---------NAVIGATION------------*/
+nav {
+    background-color: #0086e8;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.hide {
+    display: none;
+}
+nav ul li a {
+    display: block;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    color: #b2f6ff;
+}
+nav ul li a:hover {
+    background-color: #e79e55;
+    color: #ffffff;
+}
+nav ul li.active a {
+    background-color: #cc6d0e;
+    color: #ffffff;
+}
+
+
+/*-------------MAIN----------------*/
+main {
+    font-family: "PT Sans Narrow", Helvetica, sans-serif;
+    /*margin: 0 2%;*/
+}
+
+h1, h2{
+    color: #0086e8;
+}
+div.summary h5{
+    margin: 0;
+}
+div.summary {
+    position: absolute;
+    background-color: #959595;
+    padding: .5rem;
+    
+}
+figure {
+    margin-left: 0;
+}
+figure img {
+    width: 100%;
+}
+figure.banner {
+    width: 100%;
+}
+
+
+body {
+    margin: 0;
+}
+div.row section {
+    padding: 2%;
+}
+
+div.subfooter {
+    padding: 2%;
+}
+div.row section:nth-child(2){
+    display: none;
+}
+
+
+
+/*--------------FOOTER--------------*/
+div.subfooter h5 {
+    margin: 0;
+}
+
+div.subfooter section:nth-child(1){
+    margin-bottom: 1rem;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #e87708;
+    padding: .5rem 5%;
+    margin: 2% 0;
+    text-align: center;
+    clear: both;
+}
+
+
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

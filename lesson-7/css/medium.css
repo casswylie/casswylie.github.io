@@ -1,0 +1,96 @@
+/*Media Query - medium screen*/
+@media only screen and (min-width: 35rem) {
+
+/*--------------BODY----------------*/
+
+
+/*-----------HEADER------------------*/
+
+
+
+/*------------NAVIGATION-------------*/
+
+nav li {
+    float: left;
+    width: 16.6%;   
+}
+nav button {
+    display: none;
+}
+nav ul.hide {
+    display: block;
+}
+
+
+/*----------------MAIN------------*/
+
+figure img {
+    float: right;
+    width: 50%;
+    margin-left: 2%;
+    padding-bottom: .5rem
+
+
+}
+figure.banner img {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+}
+
+div.row section:nth-child(2){
+    display: inline;
+    float: left;
+    width: 100%;
+}
+div.row section:nth-child(3){
+    float: left;
+    clear: both;
+    
+}
+
+/*-------------FOOTER---------------*/
+div.subfooter section:nth-child(1) {
+    width: 50%;
+    float: left;
+    
+}
+div.subfooter section:nth-child(2) {
+    width: 50%;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} /*END Media Query*/
