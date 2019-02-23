@@ -15,27 +15,29 @@
         <title>The Rain Chaser</title>
     </head>
     <body>
-    <header class="clearfix">
-        <img src="images/logo.png" alt="logo">
-        <h1>The Rain Chaser</h1>
-        <h2>Your Friendly Forecast Family</h2>
-        <!--<div class="motto"><h2>Your Friendly Forecast Family</h2>-->
-
+        <header class="clearfix">
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <h1>The Rain Chaser</h1>
+                <h2>Your Friendly Forecast Family</h2>
+            </div>
+            <!--<div class="motto"><h2>Your Friendly Forecast Family</h2>-->
+        </header>
         
         <nav>
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
                 
-                <li><a href="/lesson-4/index.html">Home</a></li>
-                <li class="active"><a href="index.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                    <li><a href="/lesson-4/index.html">Home</a></li>
+                    <li class="active"><a href="lesson-7/index.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="lesson-7/gallery.html">Gallery</a></li>
             </ul>
         </nav>
 <!--Where does the menu go???-->
-    </header>
+    
 
     <main>
         <div class="row">
@@ -48,7 +50,7 @@
                     Partly Cloudy<br>
                     Low 36°<br>
                     High 45°
-                    <p onLoad="windChill();" id="windChill"></p>
+                    <p onLoad="windChill()" id="windChill"></p>
                 </div>
                 <img src="images/cit230_image_franklinOriginal.jpeg" alt="weather image" sizes=""
                 srcset="images/image275.jpg 300w,
@@ -108,7 +110,7 @@
         <section>
             <h2>This Day in History</h2>
 
-            <figure>
+            <figure class="historyimg">
                 <img src="images/satchel-paige.jpg" alt="image of Satchel Paige">
             </figure>
 
@@ -142,7 +144,9 @@
         <span id="currentDate"></span>
     </footer>
     
-    <script src="js/scripts.js"></script>  
+    <script src="scripts/currentdate.js"></script>  
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>  
    
 </body>
 </html>

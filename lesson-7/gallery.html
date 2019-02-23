@@ -15,52 +15,39 @@
         <title>The Rain Chaser</title>
     </head>
     <body>
-    <header class="clearfix">
-        <img src="images/logo.png" alt="logo">
-        <h1>The Rain Chaser</h1>
-        <h2>Your Friendly Forecast Family</h2>
-        <!--<div class="motto"><h2>Your Friendly Forecast Family</h2>-->
-
+        <header class="clearfix">
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <h1>The Rain Chaser</h1>
+                <h2>Your Friendly Forecast Family</h2>
+            </div>
+            <!--<div class="motto"><h2>Your Friendly Forecast Family</h2>-->
+        </header>
         
         <nav>
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
                 
                 <li><a href="/lesson-4/index.html">Home</a></li>
-                <li><a href="index.html">Preston</a></li>
+                <li><a href="lesson-7/index.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li class="active"><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="lesson-7/gallery.html">Gallery</a></li>
             </ul>
         </nav>
-
-    </header>
+<!--Where does the menu go???-->
+    
 
     <main>
-       <img src="images/gallery/clouds.jpeg" alt="clouds">
-       <img src="images/gallery/fall.jpeg" alt="fall">
-       <img src="images/gallery/fog.jpeg" alt="fog">
-       <img src="images/gallery/lightening.jpeg" alt="lightening">
-       <img src="images/gallery/rainbow.jpeg" alt="rainbow">
-       <img src="images/gallery/rainspots.jpeg" alt="rainspots">
-
-        
-        <div class="subfooter">
-            <section>
-                <h5>Address:</h5>
-                The Rain Chaser<br>
-                123 Main Street<br>
-                Provo, UT 84601
-            </section>
-               
-            <section>
-                <h5>Phone:</h5>
-                123.444.5678
-                <h5>Email:</h5>
-                contact@therainchaser.com
-            </section>
-        </div>
+            <div class = "gallery">
+                <figure><img src="images/gallery/clouds.jpeg" alt="clouds"><figcaption>Clouds</figcaption></figure>
+                <figure><img src="images/gallery/fall.jpeg" alt="fall"><figcaption>Fall Leaves</figcaption></figure>
+                <figure><img src="images/gallery/fog.jpeg" alt="fog"><figcaption>Fog</figcaption></figure>
+                <figure><img src="images/gallery/lightening.jpeg" alt="lightning"><figcaption>Lightning</figcaption></figure>
+                <figure><img src="images/gallery/rainbow.jpeg" alt="rainbow"><figcaption>Rainbow</figcaption></figure>
+                <figure><img src="images/gallery/rainspots.jpeg" alt="rainspots"><figcaption>Rainy Day</figcaption></figure>
+            </div>
     </main>
 
     
@@ -69,7 +56,9 @@
         <span id="currentDate"></span>
     </footer>
     
-    <script src="js/scripts.js"></script>  
+    <script src="scripts/currentdate.js"></script>  
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>  
    
 </body>
 </html>

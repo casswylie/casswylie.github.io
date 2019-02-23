@@ -3,7 +3,8 @@
 header {
     background-color: #e87708;
     font-family: "PT Sans Narrow Bold", Helvetica, sans-serif;
-
+    display: grid;
+    grid-template-columns: 130px auto;
 }
 header img {
     float: left;
@@ -14,15 +15,19 @@ header h1 {
     padding: 1.5rem 2% 0 2%;
     color: #ffffff;
     margin-top: 0;
+    font-size: 1.2rem;
 }
 header h2 {
     padding: 0 2%;
     color: #ffffff;
+    font-size: 1rem;
+    
 }
 /*.motto {
     padding: 0 2%;
     color: #ffffff;
 }*/
+
 
 /*---------NAVIGATION------------*/
 nav {
@@ -67,6 +72,27 @@ main {
     /*margin: 0 2%;*/
 }
 
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+div.gallery figure {
+    flex-basis: 100%;
+    margin: 1rem 2%;
+
+}
+
+div.gallery figure img {
+    width: 96%;
+}
+div.gallery figure:hover {
+    box-shadow: none;
+}
+
+
+
 h1, h2{
     color: #0086e8;
 }
@@ -79,15 +105,16 @@ div.summary {
     padding: .5rem;
     
 }
-figure {
+main section figure {
     margin-left: 0;
 }
-figure img {
+figure.historyimg img {
     width: 100%;
 }
-figure.banner {
+main section figure.banner {
     width: 100%;
 }
+
 
 
 body {

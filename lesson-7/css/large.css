@@ -6,6 +6,14 @@ header, nav, main, footer {
     margin: auto;
 }
 
+div.gallery figure {
+    flex-basis: 29%;
+}
+
+div.gallery figure:hover {
+    box-shadow: 0 0 50px #333;
+}
+
 /*div.row section:nth-child(1) {
     width: 29.3%;
     float: left;

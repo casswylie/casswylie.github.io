@@ -5,7 +5,12 @@
 
 
 /*-----------HEADER------------------*/
-
+header h1 {
+    font-size: 1.6rem;
+}
+header h2 {
+    font-size: 1.3rem;
+}
 
 
 /*------------NAVIGATION-------------*/
@@ -24,12 +29,18 @@ nav ul.hide {
 
 /*----------------MAIN------------*/
 
-figure img {
-    float: right;
+div.gallery figure {
+    flex-basis: 46%;
+}
+
+
+
+
+section figure img {
     width: 50%;
     margin-left: 2%;
-    padding-bottom: .5rem
-
+    padding-bottom: .5rem;
+    float: right;
 
 }
 figure.banner img {
