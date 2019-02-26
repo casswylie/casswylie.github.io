@@ -1,8 +1,21 @@
-/*var date = new Date().getDay();
-document.getElementById("currentDate").innerHTML = date;
-*/
+
+function getMyDate() {
+    var date = new Date();
+    var monthNames = [
+      "January", "February", "March",
+      "April", "May", "June", "July",
+      "August", "September", "October",
+      "November", "December"
+    ];
+    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                    "Thursday", "Friday", "Saturday"];
+    var day = dayNames[date.getDay()];
+    var dateNum = date.getDate();
+    var month = monthNames[date.getMonth()];
+    var year = date.getFullYear();
+  
+    return day + ', ' + dateNum + ' ' + month + ' ' + year;
+  }
 
 
-var today= new Date(); 
-var date = today.getDay() +', ' + today.getDate() + ' ' + today.getMonth() + ' ' + today.getFullYear();
-document.getElementById("currentDate").innerHTML = today;
+document.getElementById("currentDate").innerHTML = getMyDate();
