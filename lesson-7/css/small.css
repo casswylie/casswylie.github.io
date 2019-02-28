@@ -70,6 +70,7 @@ nav ul li.active a {
 main {
     font-family: "PT Sans Narrow", Helvetica, sans-serif;
     /*margin: 0 2%;*/
+    clear: both;
 }
 
 
