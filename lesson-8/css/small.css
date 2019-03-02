@@ -1,0 +1,214 @@
+/*------------HEADER----------*/
+
+header {
+    background-color: #e87708;
+    font-family: "PT Sans Narrow Bold", Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 130px auto;
+}
+header img {
+    float: left;
+    padding: 0 2%;
+    width: 125px;
+}
+header h1 {
+    padding: 1.5rem 2% 0 2%;
+    color: #ffffff;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+header h2 {
+    padding: 0 2%;
+    color: #ffffff;
+    font-size: 1rem;
+    
+}
+/*.motto {
+    padding: 0 2%;
+    color: #ffffff;
+}*/
+
+
+/*---------NAVIGATION------------*/
+nav {
+    background-color: #0086e8;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.hide {
+    display: none;
+}
+nav ul li a {
+    display: block;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    color: #b2f6ff;
+}
+nav ul li a:hover {
+    background-color: #e79e55;
+    color: #ffffff;
+}
+nav ul li.active a {
+    background-color: #cc6d0e;
+    color: #ffffff;
+}
+
+
+/*-------------MAIN----------------*/
+main {
+    font-family: "PT Sans Narrow", Helvetica, sans-serif;
+    /*margin: 0 2%;*/
+    clear: both;
+}
+
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+div.gallery figure {
+    flex-basis: 100%;
+    margin: 1rem 2%;
+
+}
+
+div.gallery figure img {
+    width: 96%;
+}
+div.gallery figure:hover {
+    box-shadow: none;
+}
+
+
+
+h1, h2{
+    color: #0086e8;
+}
+div.summary h5{
+    margin: 0;
+}
+div.summary {
+    position: absolute;
+    background-color: #959595;
+    padding: .5rem;
+    
+}
+main section figure {
+    margin-left: 0;
+}
+figure.historyimg img {
+    width: 100%;
+}
+main section figure.banner {
+    width: 100%;
+}
+
+
+
+body {
+    margin: 0;
+}
+div.row section {
+    padding: 2%;
+}
+
+div.subfooter {
+    padding: 2%;
+}
+div.row section:nth-child(2){
+    display: none;
+}
+
+/*-------------FORM--------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px dashed #0086e8;
+    border-radius: 5px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #0086e8;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #888;
+    border-radius: 3px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 30rem;
+    background-color: rgba(0,0,0,0.05);
+}
+form label.side {
+    display: block;
+    padding: .75rem 2%;   
+    margin-left: 0; 
+}
+
+form fieldset textarea {
+    width: 75%;
+    height: 200px;
+}
+form input.submitButton {
+    border: none;
+    background-color: #0086e8;
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 30rem;
+}
+
+
+
+
+
+/*--------------FOOTER--------------*/
+div.subfooter h5 {
+    margin: 0;
+}
+
+div.subfooter section:nth-child(1){
+    margin-bottom: 1rem;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #e87708;
+    padding: .5rem 5%;
+    margin: 2% 0;
+    text-align: center;
+    clear: both;
+}
+
+
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
