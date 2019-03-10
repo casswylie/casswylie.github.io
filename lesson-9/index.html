@@ -20,7 +20,7 @@
         <!--<div class="motto"><h2>Your Friendly Forecast Family</h2>-->
 
         </div>
-        <nav>
+        <nav  class="clearfix">
             <ul>
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
@@ -32,7 +32,47 @@
         </nav>
 <!--Where does the menu go???-->
     </header>
-
+    <body>
+        <script>
+            var header = document.querySelector('header');
+            var body = document.querySelector('body');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+                var townInfo = request.response;
+                loopTowns(townInfo);
+            }
+            function poopElement(type, val, dest)
+            {
+              var elem = document.createElement(type);
+              elem.textContent = val;
+              dest.appendChild(elem);
+            }
+            function generateTile(obj, dest)
+            {
+              var tile = document.createElement('div');
+              poopElement('h3', obj['name'], tile);
+              poopElement('p', obj['motto'], tile);
+              poopElement('p', 'Year Founded: ' + obj['yearFounded'], tile);
+              poopElement('p', 'Population: ' + obj['currentPopulation'], tile);
+              poopElement('p', 'Annual Rainfall: ' + obj['averageRainfall'] + '"', tile);
+              dest.appendChild(tile);
+            }
+          function loopTowns(jsonObj)
+          {
+            var towns = jsonObj['towns'];
+            for(var i =0; i < towns.length; i++)
+            {
+              generateTile(towns[i], body)
+            }
+          }
+        
+            
+            </script>
+    </body>
     <main>
 
 
