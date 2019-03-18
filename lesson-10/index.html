@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Fill Me In">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+
+        <title>The Rain Chaser</title>
+    </head>
+    <body onload="windChill()">
+        <header class="clearfix">
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <h1>The Rain Chaser</h1>
+                <h2>Your Friendly Forecast Family</h2>
+            </div>
+            <!--<div class="motto"><h2>Your Friendly Forecast Family</h2>-->
+        </header>
+        
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    
+        <script>
+            var header = document.querySelector('header');
+            var body = document.querySelector('body');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+                var townInfo = request.response;
+                loopTowns(townInfo);
+            }
+            function newElement(type, val, dest)
+            {
+              var elem = document.createElement(type);
+              elem.textContent = val;
+              dest.appendChild(elem);
+            }
+            function generateTile(obj, dest)
+            {
+              var tile = document.createElement('div');
+              newElement('h3', obj['name'], tile);
+              newElement('p', obj['motto'], tile);
+              newElement('p', 'Year Founded: ' + obj['yearFounded'], tile);
+              newElement('p', 'Population: ' + obj['currentPopulation'], tile);
+              newElement('p', 'Annual Rainfall: ' + obj['averageRainfall'] + '"', tile);
+              dest.appendChild(tile);
+            }
+          function loopTowns(jsonObj)
+          {
+            var towns = jsonObj['towns'];
+            for(var i =0; i < towns.length; i++)
+            {
+              generateTile(towns[i], body)
+            }
+          }
+        
+            
+            </script>
+    <footer class="clearfix">
+        &copy; Cassie Wylie 2019
+    </footer>
+  </body>
+</html>
