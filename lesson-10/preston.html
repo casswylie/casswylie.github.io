@@ -47,10 +47,15 @@
             <figure class="banner">
                 <div class="summary">
                     <h5>Current Weather Conditions</h5><br>
-                    Partly Cloudy<br>
-                    Low 36°<br>
-                    High 45°
-                    <p id="windChill"></p>&deg;
+                    Currently: <span id="currentTemp">current</span>&deg;<br>
+                    Conditions: <span id="description">description</span><br>
+                    Low: <span id="lowTemp">Low</span>&deg;<br>
+                    High: <span id="highTemp">High</span>&deg;<br>
+                    Wind Chill: <span id="windChill"></span>&deg;<br>
+                    Humidity: <span id="humidity"></span>%<br>
+                    Wind speed: <span id="windSpeed"></span> mph<br>
+                    <img src="images/placeholder.png" alt="current weather" id='weather_icon'>
+
                 </div>
                 <img src="images/cit230_image_franklinOriginal.jpeg" alt="weather image" sizes=""
                 srcset="images/image275.jpg 300w,
@@ -147,6 +152,7 @@
     <script src="scripts/currentdate.js"></script>  
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>  
+    <script src="scripts/weatherapi.js"></script>
    
 </body>
 </html>
