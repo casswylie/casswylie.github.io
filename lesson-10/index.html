@@ -36,9 +36,15 @@
                     <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
+        <main>
+          <section id="townTiles">
+
+          </section>
     
-        <script>
-            var header = document.querySelector('header');
+
+
+        <script> //JSON town info here
+            var section = document.querySelector('section');
             var body = document.querySelector('body');
             var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
             var request = new XMLHttpRequest();
@@ -49,14 +55,12 @@
                 var townInfo = request.response;
                 loopTowns(townInfo);
             }
-            function newElement(type, val, dest)
-            {
+            function newElement(type, val, dest){
               var elem = document.createElement(type);
               elem.textContent = val;
               dest.appendChild(elem);
             }
-            function generateTile(obj, dest)
-            {
+            function generateTile(obj, dest){
               var tile = document.createElement('div');
               newElement('h3', obj['name'], tile);
               newElement('p', obj['motto'], tile);
@@ -65,17 +69,19 @@
               newElement('p', 'Annual Rainfall: ' + obj['averageRainfall'] + '"', tile);
               dest.appendChild(tile);
             }
-          function loopTowns(jsonObj)
-          {
+          function loopTowns(jsonObj){
             var towns = jsonObj['towns'];
-            for(var i =0; i < towns.length; i++)
-            {
-              generateTile(towns[i], body)
+            for(var i =0; i < towns.length; i++){
+              if(towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
+                generateTile(towns[i], body)
+              }  
             }
           }
         
             
-            </script>
+          </script>
+
+          </main>
     <footer class="clearfix">
         &copy; Cassie Wylie 2019
     </footer>

@@ -66,7 +66,31 @@ nav ul li.active a {
 }
 
 /*-----------------JSON-------------*/
-
+/*#townTiles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 12px;
+    text-align: center;
+}
+#townTiles article {
+    width: 100%;
+    background-color: #bebebe;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5%;
+}
+#townTiles p {
+    font-size: 15px;
+    padding: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+#townTiles h3 {
+    font-size: 2rem;
+    margin: 10px;
+    text-shadow: 2px 2px black;
+}*/
 
 /*-------------MAIN----------------*/
 main {
