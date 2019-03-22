@@ -36,54 +36,48 @@
                     <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
-        <main>
-          <section id="townTiles">
-
-          </section>
-    
-
-
-        <script> //JSON town info here
-            var section = document.querySelector('section');
-            var body = document.querySelector('body');
-            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-            var request = new XMLHttpRequest();
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-            request.onload = function() {
-                var townInfo = request.response;
-                loopTowns(townInfo);
-            }
-            function newElement(type, val, dest){
-              var elem = document.createElement(type);
-              elem.textContent = val;
-              dest.appendChild(elem);
-            }
-            function generateTile(obj, dest){
-              var tile = document.createElement('div');
-              newElement('h3', obj['name'], tile);
-              newElement('p', obj['motto'], tile);
-              newElement('p', 'Year Founded: ' + obj['yearFounded'], tile);
-              newElement('p', 'Population: ' + obj['currentPopulation'], tile);
-              newElement('p', 'Annual Rainfall: ' + obj['averageRainfall'] + '"', tile);
-              dest.appendChild(tile);
-            }
-          function loopTowns(jsonObj){
-            var towns = jsonObj['towns'];
-            for(var i =0; i < towns.length; i++){
-              if(towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
-                generateTile(towns[i], body)
-              }  
-            }
-          }
         
-            
-          </script>
+        <main>
+            <section class="townsTiles">
+                <h1>Town Information</h1>
+              <div class="tile">
+                <h3><span id="preston"></span></h3>
+                <p><span id="prestonMotto"></span></p>
+                <p>Year Founded: <span id="prestonFounded"></span></p>
+                <p>Population: <span id="prestonPop"></span></p>
+                <p>Annual Rainfall: <span id="prestonRain"></span></p>
+                <img src="images/preston.jpg" alt="Preston, Idaho">
+              </div>
+                
+              <div class="tile">
+                <h3><span id="soda"></span></h3>
+                <p><span id="sodaMotto"></span></p>
+                <p>Year Founded: <span id="sodaFounded"></span></p>
+                <p>Population: <span id="sodaPop"></span></p>
+                <p>Annual Rain Fall: <span id="sodaRain"></span></p>
+                <img src="images/sodasprings1.jpg" alt="Soda Springs, Idaho">
+              </div>
+  
+              <div class="tile">
+                  <h3><span id="fish"></span></h3>
+                  <p><span id="fishMotto"></span></p>
+                  <p>Year Founded: <span id="fishFounded"></span></p>
+                  <p>Population: <span id="fishPop"></span></p>
+                  <p>Annual Rain Fall: <span id="fishRain"></span></p>
+                  <img src="images/fishhaven.jpg" alt="Fish Haven, Idaho">
+                </div>
+  
+            </section>
+  
 
           </main>
     <footer class="clearfix">
         &copy; Cassie Wylie 2019
     </footer>
+    
+    
+    <script src="scripts/towninfo.js"></script>
+
+
   </body>
 </html>
