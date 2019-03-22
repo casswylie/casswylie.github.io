@@ -67,13 +67,14 @@ nav ul li.active a {
 
 /*-----------------JSON-------------*/
 /*#townTiles {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: 1fr;
     grid-gap: 5px;
     padding: 12px;
-    text-align: center;
+    text-align: center;*/
 }
-#townTiles article {
+/*#townTiles article {
     width: 100%;
     background-color: #bebebe;
     padding: 10px;
@@ -90,13 +91,61 @@ nav ul li.active a {
     font-size: 2rem;
     margin: 10px;
     text-shadow: 2px 2px black;
+}
+article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #bebebe;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5%;
+    box-shadow: 2px 2px black;
+}
+article p {
+    font-size: 15px;
+    padding: 2%;
+    margin: 0px;
+    text-align: center;
+    //font-weight: bold;
+}
+article h3 {
+    font-size: 2rem;
+    margin: 10px;
+    color: #0086e8;
+    
 }*/
+main section.townsTiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tile {
+    margin: 2%;
+    border: 2px grey solid;
+    width: 96%;
+    padding: 2%;
+    text-align: center;
+    background-color: beige;
+    
+}
+.townsTiles h1 {
+    text-align: center;
+}
+main section.townsTiles div.tile img {
+    width: 100%;
+}
+
 
 /*-------------MAIN----------------*/
 main {
     font-family: "PT Sans Narrow", Helvetica, sans-serif;
     /*margin: 0 2%;*/
     clear: both;
+
 }
 
 

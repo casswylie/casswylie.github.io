@@ -60,6 +60,13 @@ div.row section:nth-child(3){
     
 }
 
+/*---------JSON------------*/
+.tile {
+    width: 46%;
+}
+main section.townsTiles div.tile img {
+    width: 100%;
+}
 /*-------------FOOTER---------------*/
 div.subfooter section:nth-child(1) {
     width: 50%;
