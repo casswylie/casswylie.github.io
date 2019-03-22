@@ -66,7 +66,30 @@ nav ul li.active a {
 }
 
 /*-----------------JSON-------------*/
-
+main section.townsTiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tile {
+    margin: 2%;
+    border: 2px grey solid;
+    width: 96%;
+    padding: 2%;
+    text-align: center;
+    background-color: beige;
+    float: left;
+}
+.tile h3 {
+    color: #cc6d0e;
+}
+.townsTiles h1 {
+    text-align: center;
+    width: 100%;
+}
+main section.townsTiles div.tile img {
+    width: 100%;
+}
 
 /*-------------MAIN----------------*/
 main {

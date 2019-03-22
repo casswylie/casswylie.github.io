@@ -73,7 +73,7 @@ nav ul li.active a {
     grid-gap: 5px;
     padding: 12px;
     text-align: center;*/
-}
+
 /*#townTiles article {
     width: 100%;
     background-color: #bebebe;
@@ -130,10 +130,14 @@ main section.townsTiles {
     padding: 2%;
     text-align: center;
     background-color: beige;
-    
+    float: left;
+}
+.tile h3 {
+    color: #cc6d0e;
 }
 .townsTiles h1 {
     text-align: center;
+    width: 100%;
 }
 main section.townsTiles div.tile img {
     width: 100%;
@@ -145,7 +149,6 @@ main {
     font-family: "PT Sans Narrow", Helvetica, sans-serif;
     /*margin: 0 2%;*/
     clear: both;
-
 }
 
 
