@@ -1,0 +1,54 @@
+@media only screen and (min-width: 1028px) {
+
+
+header, nav, body, main, footer {
+    max-width: 64rem;
+    margin: auto;
+}
+
+div.gallery figure {
+    flex-basis: 29%;
+}
+
+div.gallery figure:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+/*div.row section:nth-child(1) {
+    width: 29.3%;
+    float: left;
+}
+div.row section:nth-child(2) {
+    width: 29.3%;
+   
+}
+div.row section:nth-child(3) {
+    width: 29.3%;
+   
+}*/
+/*-----------JSON----------------*/
+.tile {
+    width: 24%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

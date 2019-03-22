@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Fill Me In">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+
+        <title>The Rain Chaser</title>
+    </head>
+    <body onload="windChill()">
+        <header class="clearfix">
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <h1>The Rain Chaser</h1>
+                <h2>Your Friendly Forecast Family</h2>
+            </div>
+            <!--<div class="motto"><h2>Your Friendly Forecast Family</h2>-->
+        </header>
+        
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+<!--Where does the menu go???-->
+    
+
+    <main>
+        <div class="row">
+        <section>
+            <h1>Preston, ID</h1>
+            
+            <figure class="banner">
+                <div class="summary">
+                    <h5>Current Weather Conditions</h5><br>
+                    Currently: <span id="currentTemp">current</span>&deg;<br>
+                    Conditions: <span id="description">description</span><br>
+                    Low: <span id="lowTemp">Low</span>&deg;<br>
+                    High: <span id="highTemp">High</span>&deg;<br>
+                    Wind Chill: <span id="windChill"></span>&deg;<br>
+                    Humidity: <span id="humidity"></span>%<br>
+                    Wind speed: <span id="windSpeed"></span> mph<br>
+                    <img src="images/placeholder.png" alt="current weather" id='weather_icon'>
+
+                </div>
+                <img src="images/cit230_image_franklinOriginal.jpeg" alt="weather image" sizes=""
+                srcset="images/image275.jpg 300w,
+                images/image550.jpg 600w,
+                images/image825.jpg 900w,
+                images/image1100.jpg 1100w">
+            </figure>
+        </section>
+
+        <section>
+            <h2>Five-day Forecast Details</h2>
+        
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Description</th>
+                    <th>High / Low</th>
+                    <th>Wind</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Partly Cloudy</td>
+                    <td>36° / 59°</td>
+                    <td>West 8 mph</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Partly Cloudy</td>
+                    <td>36° / 59°</td>
+                    <td>West 8 mph</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Partly Cloudy</td>
+                    <td>36° / 59°</td>
+                    <td>West 8 mph</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Partly Cloudy</td>
+                    <td>36° / 59°</td>
+                    <td>West 8 mph</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Partly Cloudy</td>
+                    <td>36° / 59°</td>
+                    <td>West 8 mph</td>
+                </tr>
+                
+            
+
+            </table>
+
+        </section>
+
+        <section>
+            <h2>This Day in History</h2>
+
+            <figure class="historyimg">
+                <img src="images/satchel-paige.jpg" alt="image of Satchel Paige">
+            </figure>
+
+            <p>On this day in 1971, pitcher Leroy “Satchel” Paige becomes the first Negro League veteran to be nominated for the Baseball Hall of Fame. In August of that year, Paige, a pitching legend known for his fastball, showmanship and the longevity of his playing career, which spanned five decades, was inducted. Joe DiMaggio once called Paige “the best and fastest pitcher I’ve ever faced.”</p>
+            <p>Paige was born in Mobile, Alabama, most likely on July 7, 1906, although the exact date remains a mystery. He earned his nickname, Satchel, as a boy when he earned money carrying passengers’ bags at train stations. Baseball was segregated when Paige started playing baseball professionally in the 1920s, so he spent most of his career pitching for Negro League teams around the United States. During the winter season, he pitched for teams in the Caribbean and Central and South America. As a barnstorming player who traveled thousands of miles each season and played for whichever team met his asking price, he pitched an estimated 2,500 games, had 300 shut-outs and 55 no-hitters. In one month in 1935, he reportedly pitched 29 consecutive games.</p>
+            <p>To keep reading, click <a href="https://www.history.com/this-day-in-history">here.</a></p>
+        </section>
+        </div>
+
+        
+        <div class="subfooter">
+            <section>
+                <h5>Address:</h5>
+                The Rain Chaser<br>
+                123 Main Street<br>
+                Provo, UT 84601
+            </section>
+               
+            <section>
+                <h5>Phone:</h5>
+                123.444.5678
+                <h5>Email:</h5>
+                contact@therainchaser.com
+            </section>
+        </div>
+    </main>
+
+    
+    <footer>
+        &copy; Cassie Wylie 
+        <span id="currentDate"></span>
+    </footer>
+    
+    <script src="scripts/currentdate.js"></script>  
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>  
+    <script src="scripts/weatherapi.js"></script>
+   
+</body>
+</html>
