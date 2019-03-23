@@ -65,7 +65,7 @@
             </figure>
         </section>
 
-        <section>
+        <section class="forecast">
             <h2>Five-day Forecast Details</h2>
         
             <table>
@@ -77,33 +77,33 @@
                 </tr>
                 <tr>
                     <td>Monday</td>
-                    <td>Partly Cloudy</td>
-                    <td>36° / 59°</td>
-                    <td>West 8 mph</td>
+                    <td><span id="mdescription"></span></td>
+                    <td><span id="mhigh"></span>&deg; / <span id="mlow"></span>&deg;</td>
+                    <td><span id="mwind"></span>mph</td>
                 </tr>
                 <tr>
                     <td>Tuesday</td>
-                    <td>Partly Cloudy</td>
-                    <td>36° / 59°</td>
-                    <td>West 8 mph</td>
+                    <td><span id="tdescription"></span></td>
+                    <td><span id="thigh"></span>&deg; / <span id="tlow"></span>&deg;</td>
+                    <td><span id="twind"></span>mph</td>
                 </tr>
                 <tr>
                     <td>Wednesday</td>
-                    <td>Partly Cloudy</td>
-                    <td>36° / 59°</td>
-                    <td>West 8 mph</td>
+                    <td><span id="wdescription"></span></td>
+                    <td><span id="whigh"></span>&deg; / <span id="wlow"></span>&deg;</td>
+                    <td><span id="wwind"></span>mph</td>
                 </tr>
                 <tr>
                     <td>Thursday</td>
-                    <td>Partly Cloudy</td>
-                    <td>36° / 59°</td>
-                    <td>West 8 mph</td>
+                    <td><span id="thdescription"></span></td>
+                    <td><span id="thhigh"></span>&deg; / <span id="thlow"></span>&deg;</td>
+                    <td><span id="thwind"></span>mph</td>
                 </tr>
                 <tr>
                     <td>Friday</td>
-                    <td>Partly Cloudy</td>
-                    <td>36° / 59°</td>
-                    <td>West 8 mph</td>
+                    <td><span id="fdescription"></span></td>
+                    <td><span id="fhigh"></span>&deg; / <span id="flow"></span>&deg;</td>
+                    <td><span id="fwind"></span>mph</td>
                 </tr>
                 
             
@@ -153,6 +153,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>  
     <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/forecastapi.js"></script>
    
 </body>
 </html>

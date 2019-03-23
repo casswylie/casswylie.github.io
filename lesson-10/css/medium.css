@@ -78,6 +78,33 @@ div.subfooter section:nth-child(2) {
     float: right;
 }
 
+/*---------------Forecast TABLE---------------*/
+
+table {
+    width: 96%;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+th {
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #0086e8;
+    color: #b2f6ff;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.forecast {
+    display: block;
+    padding: 10px;
+}
+
 
 
 
