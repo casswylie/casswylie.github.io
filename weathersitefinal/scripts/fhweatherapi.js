@@ -3,7 +3,7 @@ var weatherRequest = new XMLHttpRequest();
 
 //var apiURLstring = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial';
 
-weatherRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
+weatherRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zip=83287,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
 
 weatherRequest.send();
 
