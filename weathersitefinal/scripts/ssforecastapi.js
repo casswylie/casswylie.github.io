@@ -3,7 +3,7 @@
 
 var forecastObject = new XMLHttpRequest();
 
-forecastObject.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?zip=83276,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
+forecastObject.open('GET', '//api.openweathermap.org/data/2.5/forecast?zip=83276,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
 
 forecastObject.send();
 
