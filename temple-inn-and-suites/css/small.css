@@ -198,6 +198,26 @@ form fieldset textarea {
     height: 300px;
     width: 100%;
 }
+form fieldset label select option {
+    color: #000000;
+}
+
+form .formButton {
+    width: 90%;
+    height: 55px;
+    background-color: #199bdd;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 2%;
+    font-weight:bold;
+    text-decoration: underline;
+    max-width: 30rem;
+    border: 1px solid #116f9e;
+    padding: .5rem 2%;
+    cursor: pointer;
+}
+
 /*------------CONTACT FORM/MAP-----------*/
 iframe {
     width: 92%;
@@ -210,54 +230,9 @@ div.row section {
 }
 
 
-/*form fieldset {
-    margin: 0;
-    border: 1px solid #116f9e;
-    padding: .5rem 2%;
-    font-family: 'Poppins', sans-serif;
-}
-form legend {
-    color: #0d5477;
-    padding: 0 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    
-}
-form label.top input, form label.top select {
-    -webkit-appearance: none;
-    display: block;
-    padding: .75rem;
-    color: #595959;
-    width: 100%;
-    max-width: 30rem;
-    border: solid 1px #888;
-    font-size: 1rem;
-    margin: 0 0 1rem;
-}
-form fieldset textarea {
-    display: block;
-    height: 300px;
-    width: 100%;
-}
+/*
 
-form fieldset label select option {
-    color: #000000;
-}
-form #formButton {
-    width: 90%;
-    height: 55px;
-    background-color: #199bdd;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
-    font-weight:bold;
-    text-decoration: underline;
-    max-width: 30rem;
-    border: 1px solid #116f9e;
-    padding: .5rem 2%;
-    cursor: pointer;
-}
+
 */
 /*-----------FOOTER------------*/
 footer {
