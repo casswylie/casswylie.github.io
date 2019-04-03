@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Temple Inn and Suites">
+        <meta name="author" content="Cassie Wylie">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Playfair+Display|Poppins" rel="stylesheet">
+
+        <title>The Temple Inn & Suites</title>
+    </head>
+
+    <body>
+        <header class="clearfix">
+            <img id="logo" src="images/logo-white.png" alt="logo">
+            <div>
+                <h1>Temple Inn & Suites</h1>
+                <h3>For All Temple Housing Needs</h3>
+            </div>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="menuButton()">&#9776;</button>
+            <ul id="mainNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li><!--dropdown with the subpages? "Receptions" and "Full-time temple missionary"-->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="slideshow">
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/gilbert-arizona-temple.jpg" alt="Gilbert, Arizona" srcset="images/gilbert-arizona-temple275.jpg 300w, images/gilbert-arizona-temple600.jpg 600w, images/gilbert-arizona-temple900.jpg 900w">
+                    
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/freiberg-germany-temple.jpg" alt="Freiburg, Germany" srcset="images/freiberg-germany-temple300.jpg 300w, images/freiberg-germany-temple600.jpg 600w, images/freiberg-germany-temple900.jpg 900w">
+                  
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/nauvoo-illinois-temple.jpg" alt="Nauvoo, Illinois"  srcset="images/nauvoo-illinois-temple300.jpg 300w, images/nauvoo-illinois-temple600.jpg 600w, images/nauvoo-illinois-temple900.jpg 900w">
+
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/rome-italy-temple.jpg" alt="Rome, Italy"  srcset="images/rome-italy-temple275.jpg 300w, images/rome-italy-temple550.jpg 600w, images/rome-italy-temple825.jpg 900w">
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/saltlakecity-utah-temple.jpg" alt="Salt Lake City, Utah"  srcset="images/saltlakecity-utah-temple275.jpg 300w, images/saltlakecity-utah-temple550.jpg 600w, images/saltlakecity-utah-temple825.jpg 900w">
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/sapporo-japan-temple.jpg" alt="Sapporo, Japan"  srcset="images/sapporo-japan-temple275.jpg 300w, images/sapporo-japan-temple550.jpg 600w, images/sapporo-japan-temple825.jpg 900w">
+                </figure>
+                
+            </div>
+<!--ARROWS - Turned off because it wouldn't work right-->
+            <!--<div id="leftArrow" onclick="plusDivs(-1)">&#10094;</div>
+            <div id="rightArrow" onclick="plusDivs(1)">&#10095;</div>-->
+                <div class="circles">
+                
+                    
+                    
+                <!--Circle Navigation -->
+                    <span class="badge" onclick="currentDiv(1)"></span>
+                    <span class="badge" onclick="currentDiv(2)"></span>
+                    <span class="badge" onclick="currentDiv(3)"></span>
+                    <span class="badge" onclick="currentDiv(4)"></span>
+                    <span class="badge" onclick="currentDiv(5)"></span>
+                    <span class="badge" onclick="currentDiv(6)"></span>
+
+                <!--ARROWS-->
+                    
+                    
+                </div>
+                
+            <div class="paragraph">
+                <h2>What We Do</h2>
+                <p>Our hotels were opened because there was a need not being met. We all want to serve the Lord and do His holy work in the temple, whether it be for ourselves or others, through missionary work, etc. Now there are places to stay or change for when you travel far to the temple, a reception hall for other services, a shuttle to and from the temple, short-term babysitting for those with young children, and many other things to help make your experience at the temple even more enjoyable and worry free. Make a reservation now to experience your next stay at the Temple Inn & Suites Hotel!</p>
+            </div>
+            <div>
+                    <form method="get" action="reservations.html">
+                        <button type="submit">Make a Reservation!</button>
+                    </form>
+            </div>
+
+        </main>
+
+        <footer>
+            
+            <h4>Temple Inn & Suites</h4>
+            4800 Montgomery Ln #300<br>
+            Bethesda, MD 20814<br><br>
+            &copy; Cassie Wylie 2019 <br>
+
+        </footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/slideshow.js"></script>
+
+    </body>
+</html>

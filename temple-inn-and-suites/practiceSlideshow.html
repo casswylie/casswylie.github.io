@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Temple Inn and Suites">
+        <meta name="author" content="Cassie Wylie">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Playfair+Display|Poppins" rel="stylesheet">
+
+        <title>The Temple Inn & Suites</title>
+    </head>
+
+    <body>
+        <header>
+            <!--ADD A LOGO-->
+            <div>
+                <h1>Temple Inn & Suites</h1>
+                <h2>For All Temple Housing Needs</h2>
+            </div>
+        </header>
+
+        <nav>
+            <button onclick="menuButton()">&#9776;</button>
+            <ul id="mainNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li><!--dropdown with the subpages? "Receptions" and "Full-time temple missionary"-->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="slideshow">
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/gilbert-arizona-temple.jpg" alt="Gilbert, Arizona" srcset="images/gilbert-arizona-temple275.jpg 300w, images/gilbert-arizona-temple600.jpg 600w, images/gilbert-arizona-temple900.jpg 900w">
+                  
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/freiberg-germany-temple.jpg" alt="Freiburg, Germany" srcset="images/freiberg-germany-temple300.jpg 300w, images/freiberg-germany-temple600.jpg 600w, images/freiberg-germany-temple900.jpg 900w">
+                  
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/nauvoo-illinois-temple.jpg" alt="Nauvoo, Illinois"  srcset="images/nauvoo-illinois-temple300.jpg 300w, images/nauvoo-illinois-temple600.jpg 600w, images/nauvoo-illinois-temple900.jpg 900w">
+
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/rome-italy-temple.jpg" alt="Rome, Italy"  srcset="images/rome-italy-temple275.jpg 300w, images/rome-italy-temple550.jpg 600w, images/rome-italy-temple825.jpg 900w">
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/saltlakecity-utah-temple.jpg" alt="Salt Lake City, Utah"  srcset="images/saltlakecity-utah-temple275.jpg 300w, images/saltlakecity-utah-temple550.jpg 600w, images/saltlakecity-utah-temple825.jpg 900w">
+                </figure>
+                <figure class="templePhoto">
+                    <img class="mySlides" src="images/sapporo-japan-temple.jpg" alt="Sapporo, Japan"  srcset="images/sapporo-japan-temple275.jpg 300w, images/sapporo-japan-temple550.jpg 600w, images/sapporo-japan-temple825.jpg 900w">
+                </figure>
+
+                <div>
+                <!--ARROWS-->
+                <div class="prev" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="next" onclick="plusDivs(1)">&#10095;</div>
+                    
+                <!--Circle Navigation -->
+                    <span class="dot" onclick="currentDiv(1)"></span>
+                    <span class="dot" onclick="currentDiv(2)"></span>
+                    <span class="dot" onclick="currentDiv(3)"></span>
+                    <span class="dot" onclick="currentDiv(4)"></span>
+                    <span class="dot" onclick="currentDiv(5)"></span>
+                    <span class="dot" onclick="currentDiv(6)"></span>
+
+                <!--ARROWS-->
+                   
+                    
+                </div>
+                
+            </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/slideshow.js"></script>
+
+    </body>
+</html>
+
+<style>
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/*
+div.slideshow-container figure.mySlides figcaption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position:absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}*/
+.dot {
+    cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}*/</style>

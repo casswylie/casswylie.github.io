@@ -1,0 +1,89 @@
+@media only screen and (min-width: 35rem) {
+
+/*-------------HEADER---------------*/
+header h1 {
+    font-size: 2rem;
+    padding: 0;
+}
+header h3 {
+    font-size: 1.2rem;
+}
+/*-------------NAV------------------*/
+nav li {
+    float: left;
+    width: 20%;
+}
+nav button {
+    display: none;
+}    
+nav ul.hide {
+        display: block;
+}
+
+/*-------------MAIN------------------*/
+.paragraph {
+    padding: 2% 15%;
+}
+div form button {
+    width: 50%;
+    margin: 2% 23% 2rem;
+    font-size: 1.6rem
+
+}
+div.row section :nth-child(1){
+    float: left;
+    width: 46%;
+    text-align: left;
+}
+div.row section :nth-child(2) {
+    float: left;
+    width: 46%;
+}
+div.row section form label.top input {
+    width: 100%;
+}
+div.row section form fieldset {
+    width: 46%;
+    min-width: 250px;
+    max-width: 32rem;
+    padding: 1rem;
+}
+
+
+/*---------FORM------------*/
+/*form #formButton {
+    font-size: 1.6rem;
+}*/
+form fieldset, iframe{
+    flex-basis: 46%;
+    width: 100%;
+}
+iframe {
+    width: 50%;
+    height: 560px;
+    
+}
+/*-------------SLIDESHOW-------------*/
+ .circles {
+     margin: 0 44% 1rem;
+ }
+#leftArrow, #rightArrow {
+    top: 25%
+}
+/*-------------FOOTER---------------*/
+footer {
+    font-size: .8rem;
+}
+footer h4 {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+    
+}

@@ -1,3 +1,282 @@
-font-family: 'Poppins', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Cinzel', serif;
+
+/*font-family: 'Poppins', sans-serif;
+*/
+
+
+
+
+/*--------------HEADER---------------*/
+header {
+    padding: 0 2%;
+    background-color: #093951;
+    font-family: 'Cinzel', serif;
+    display: grid;
+    grid-template-columns: 130px auto;
+}
+header h1, header h3 {
+    color: #ffffff;
+}
+header h1 {
+    font-size: 1.2rem;
+    padding: 1.5rem 0 0 0;
+}
+header h3 {
+    font-size: .8rem;
+}
+#logo {
+    padding:  1rem 0;
+}
+/*----------------NAV----------------*/
+nav {
+    padding: 0 2%;
+    background-color: #116f9e;
+    font-family: 'Poppins', sans-serif;
+    
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2%;
+    margin: 0;
+    text-align: center;
+}
+nav ul.hide {
+    display: none;
+}
+nav ul li a {
+    display: block;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    color: #ffffff;
+}
+nav ul li a:hover {
+    background-color: #595959; 
+}
+
+/*----------------MAIN----------------*/
+body {
+    background-color: #eeeeee;
+}
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    font-family: 'Playfair Display', serif;
+}
+div form button {
+    width: 90%;
+    height: 55px;
+    background-color: #199bdd;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 2% 8% 2rem;
+    font-weight:bold;
+    text-decoration: underline;
+    border: 1px solid #116f9e;
+    cursor: pointer;
+
+}
+.paragraph {
+    text-align: center; 
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #116f9e;
+    padding: 0 2%;
+}
+
+/*----------SLIDESHOW-----------*/
+
+.mySlides {
+    display: none;
+}
+main figure.templePhoto {
+    width:70%;
+    margin: 2rem 15% 2%;
+}
+main figure.templePhoto img {
+    width: 100%;
+}
+#leftArrow {
+    position: absolute;
+    margin-top: 15%;
+}
+#rightArrow {
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 90%;
+}
+#leftArrow, #rightArrow {
+    font-size: 18px;
+    top: 50%;
+    width: 20px;
+    padding: 2%;
+    color: #116f9e;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+#leftArrow, #rightArrow, .badge {
+    cursor:pointer
+}
+
+#leftArrow:hover, #rightArrow:hover {
+    background-color: #d8d8d8;;
+}
+.badge {
+    height:13px;
+    width:13px;
+    padding:0;
+    border: grey solid 1px;
+    border-radius: 45px;
+    color: transparent;
+    display: inline-block;
+/*HOW TO ALIGN??? POsition:?; align: justify-content:*/
+}
+.circles {
+    margin: 0  39% 1rem;
+}
+.badge:hover {
+    background-color:#595959;
+    border: #000000 solid 1px;
+}
+.active {
+    background-color: #d8d8d8;
+}
+
+
+/*------------FORMS----------------*/
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+form legend.contactform {
+    margin: 1rem 2% 0;
+}
+form fieldset {
+    flex-basis: 96%;
+    margin: 1rem 2%;
+    border: 1px solid #116f9e;
+    padding: .5rem 2%;
+    
+}
+form legend {
+    color: #0d5477;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+form fieldset label, form fieldset label select, form fieldset label input, form fieldset textarea {
+    width: 100%;
+    max-width: 30rem;
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    padding: .75rem;
+    color: #595959;
+    width: 100%;
+    max-width: 30rem;
+    border: solid 1px #888;
+    font-size: 1rem;
+    margin: 0 0 1rem;
+}
+form fieldset textarea {
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+/*------------CONTACT FORM/MAP-----------*/
+iframe {
+    width: 92%;
+    height: 300px;
+    margin: 1rem 2%;
+    
+}
+div.row section {
+    padding: 0 2%;
+}
+
+
+/*form fieldset {
+    margin: 0;
+    border: 1px solid #116f9e;
+    padding: .5rem 2%;
+    font-family: 'Poppins', sans-serif;
+}
+form legend {
+    color: #0d5477;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    padding: .75rem;
+    color: #595959;
+    width: 100%;
+    max-width: 30rem;
+    border: solid 1px #888;
+    font-size: 1rem;
+    margin: 0 0 1rem;
+}
+form fieldset textarea {
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+
+form fieldset label select option {
+    color: #000000;
+}
+form #formButton {
+    width: 90%;
+    height: 55px;
+    background-color: #199bdd;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    font-weight:bold;
+    text-decoration: underline;
+    max-width: 30rem;
+    border: 1px solid #116f9e;
+    padding: .5rem 2%;
+    cursor: pointer;
+}
+*/
+/*-----------FOOTER------------*/
+footer {
+    padding:  1rem 2% 1.5rem;
+    background-color: #093951;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: .6rem;
+}
+footer h4 {
+    margin: .5rem;
+    font-size: .8rem;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
