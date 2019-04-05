@@ -91,7 +91,9 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     color: #116f9e;
     padding: 0 2%;
 }
-
+p.thankyou {
+    margin: 1rem 2%;
+}
 /*----------SLIDESHOW-----------*/
 
 .mySlides {

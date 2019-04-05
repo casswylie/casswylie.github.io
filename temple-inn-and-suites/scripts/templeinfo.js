@@ -1,0 +1,102 @@
+var templeObject = new XMLHttpRequest();
+templeObject.open('GET', 'temples.json', true);
+
+templeObject.send();
+
+templeObject.onload = function() {
+    var templeInfo = JSON.parse(weatherObject.responseText);
+    console.log(templeInfo);
+
+    document.getElementById('ak').innerHTML = templeInfo.temple[0].name;
+    console.log(templeInfo.temple[0].name);
+    document.getElementById('akstreet').innerHTML = templeInfo.temple[0].street;
+    console.log(templeInfo.temple[0].street);
+    document.getElementById('akcity').innerHTML = templeInfo.temple[0].city;
+    console.log(templeInfo.temple[0].city);
+    document.getElementById('akphone').innerHTML = templeInfo.temple[0].phone;
+    console.log(templeInfo.temple[0].phone);
+    document.getElementById('akbaptism').innerHTML = templeInfo.temple[0].baptism;
+    console.log(templeInfo.temple[0].baptism);
+    document.getElementById('akinitiatory').innerHTML = templeInfo.temple[0].initiatory;
+    console.log(templeInfo.temple[0].initiatory);
+    document.getElementById('akendowment').innerHTML = templeInfo.temple[0].endowment;
+    console.log(templeInfo.temple[0].endowment);
+    document.getElementById('aksealing').innerHTML = templeInfo.temple[0].sealing;
+    console.log(templeInfo.temple[0].sealing);
+    document.getElementById('akservices').innerHTML = templeInfo.temple[0].services;
+    console.log(templeInfo.temple[0].services);
+    document.getElementById('akmilestones').innerHTML = templeInfo.temple[0].milestones;
+    console.log(templeInfo.temple[0].milestones);
+    document.getElementById('akclosures').innerHTML = templeInfo.temple[0].closures;
+    console.log(templeInfo.temple[0].closures);
+
+
+    document.getElementById('az').innerHTML = templeInfo.temple[1].name;
+    console.log(templeInfo.temple[1].name);
+    document.getElementById('azstreet').innerHTML = templeInfo.temple[1].street;
+    console.log(templeInfo.temple[1].street);
+    document.getElementById('azcity').innerHTML = templeInfo.temple[1].city;
+    console.log(templeInfo.temple[1].city);
+    document.getElementById('azphone').innerHTML = templeInfo.temple[1].phone;
+    console.log(templeInfo.temple[1].phone);
+    document.getElementById('azbaptism').innerHTML = templeInfo.temple[1].baptism;
+    console.log(templeInfo.temple[1].baptism);
+    document.getElementById('azinitiatory').innerHTML = templeInfo.temple[1].initiatory;
+    console.log(templeInfo.temple[1].initiatory);
+    document.getElementById('azendowment').innerHTML = templeInfo.temple[1].endowment;
+    console.log(templeInfo.temple[1].endowment);
+    document.getElementById('azsealing').innerHTML = templeInfo.temple[1].sealing;
+    console.log(templeInfo.temple[1].sealing);
+    document.getElementById('azservices').innerHTML = templeInfo.temple[1].services;
+    console.log(templeInfo.temple[1].services);
+    document.getElementById('azmilestones').innerHTML = templeInfo.temple[1].milestones;
+    console.log(templeInfo.temple[1].milestones);
+    document.getElementById('azclosures').innerHTML = templeInfo.temple[1].closures;
+    console.log(templeInfo.temple[1].closures);
+
+    document.getElementById('ny').innerHTML = templeInfo.temple[2].name;
+    console.log(templeInfo.temple[2].name);
+    document.getElementById('nystreet').innerHTML = templeInfo.temple[2].street;
+    console.log(templeInfo.temple[2].street);
+    document.getElementById('nycity').innerHTML = templeInfo.temple[2].city;
+    console.log(templeInfo.temple[2].city);
+    document.getElementById('nyphone').innerHTML = templeInfo.temple[2].phone;
+    console.log(templeInfo.temple[2].phone);
+    document.getElementById('nybaptism').innerHTML = templeInfo.temple[2].baptism;
+    console.log(templeInfo.temple[2].baptism);
+    document.getElementById('nyinitiatory').innerHTML = templeInfo.temple[2].initiatory;
+    console.log(templeInfo.temple[2].initiatory);
+    document.getElementById('nyendowment').innerHTML = templeInfo.temple[2].endowment;
+    console.log(templeInfo.temple[2].endowment);
+    document.getElementById('nysealing').innerHTML = templeInfo.temple[2].sealing;
+    console.log(templeInfo.temple[2].sealing);
+    document.getElementById('nyservices').innerHTML = templeInfo.temple[2].services;
+    console.log(templeInfo.temple[2].services);
+    document.getElementById('nymilestones').innerHTML = templeInfo.temple[2].milestones;
+    console.log(templeInfo.temple[2].milestones);
+    document.getElementById('nyclosures').innerHTML = templeInfo.temple[2].closures;
+    console.log(templeInfo.temple[2].closures);
+
+    document.getElementById('wq').innerHTML = templeInfo.temple[3].name;
+    console.log(templeInfo.temple[3].name);
+    document.getElementById('wqstreet').innerHTML = templeInfo.temple[3].street;
+    console.log(templeInfo.temple[3].street);
+    document.getElementById('wqcity').innerHTML = templeInfo.temple[3].city;
+    console.log(templeInfo.temple[3].city);
+    document.getElementById('wqphone').innerHTML = templeInfo.temple[3].phone;
+    console.log(templeInfo.temple[3].phone);
+    document.getElementById('wqbaptism').innerHTML = templeInfo.temple[3].baptism;
+    console.log(templeInfo.temple[3].baptism);
+    document.getElementById('wqinitiatory').innerHTML = templeInfo.temple[3].initiatory;
+    console.log(templeInfo.temple[3].initiatory);
+    document.getElementById('wqendowment').innerHTML = templeInfo.temple[3].endowment;
+    console.log(templeInfo.temple[3].endowment);
+    document.getElementById('wqsealing').innerHTML = templeInfo.temple[3].sealing;
+    console.log(templeInfo.temple[3].sealing);
+    document.getElementById('wqservices').innerHTML = templeInfo.temple[3].services;
+    console.log(templeInfo.temple[3].services);
+    document.getElementById('wqmilestones').innerHTML = templeInfo.temple[3].milestones;
+    console.log(templeInfo.temple[3].milestones);
+    document.getElementById('wqclosures').innerHTML = templeInfo.temple[3].closures;
+    console.log(templeInfo.temple[3].closures);
+}
