@@ -30,7 +30,7 @@ div form button {
     font-size: 1.6rem
 
 }
-div.row section :nth-child(1){
+/*div.row section :nth-child(1){
     float: left;
     width: 46%;
     text-align: left;
@@ -47,7 +47,7 @@ div.row section form fieldset {
     min-width: 250px;
     max-width: 32rem;
     padding: 1rem;
-}
+}*/
 
 
 /*---------FORM------------*/
@@ -56,12 +56,19 @@ form .formButton {
 }
 form fieldset, iframe{
     flex-basis: 46%;
-    width: 100%;
+    width: 90%;
+}
+.name-wrapper {
+    display: flex;
+}
+.name-wrapper label {
+    flex: 1;
+    max-width: 46%;
+    margin: 0 0.5rem;
+    padding-right: 0.8rem;
 }
 iframe {
-    width: 50%;
-    height: 560px;
-    
+    height: 560px; 
 }
 
 /*-------------SLIDESHOW-------------*/

@@ -39,30 +39,30 @@
         <main class="clearfix">
             <h2>Contact Us with Any Questions or Concerns</h2>
             
-            <div class="row">
-            <section>
-            <form method="get" action="contacted.html">
-                    <legend class="contactform">Email Us</legend>
-                <fieldset>
+            <div class="row content-wrapper"> <!--row-->
+                <div><!--section-->
+                    <form method="get" action="contacted.html">
+                        <legend class="contactform">Email Us</legend>
+                        <fieldset class="name-wrapper"><!--fieldset-->
                     
-                    <label class="top">First Name: <input type="text" name="firstname" required></label>
-                    <label class="top">Last Name: <input type="text" name="lastname"></label>
+                            <label class="top">First Name: <input type="text" name="firstname" required></label>
+                            <label class="top">Last Name: <input type="text" name="lastname"></label>
                     
-                </fieldset>
-                <legend class="contactform">Message: </legend>
-                <fieldset>
+                        </fieldset>
+                        <legend class="contactform">Message: </legend>
+                        <fieldset class="textarea-wrapper"><!--fieldset-->
                     
-                    <textarea name="message" placeholder=" Enter message here..."></textarea></label>
-                </fieldset>
-                <input class="formButton send" type="submit" value="Send" class="submitButton">
-            </form>
-            </section>
-            <section>
-                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                </iframe>
-                <a href="https://www.emojilib.com"></a>
+                            <textarea name="message" placeholder=" Enter message here..."></textarea>
+                        </fieldset>
+                        <input class="formButton send" type="submit" value="Send" class="submitButton">
+                    </form>
+                </div>
+                <div>
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                    <a href="https://www.emojilib.com"></a>
                 
-            </section>
+                </div>
             </div>
         </main>
 
