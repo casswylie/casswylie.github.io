@@ -93,6 +93,7 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 }
 p {
     padding: 0 2%;
+    
 }
 p.thankyou {
     margin: 1rem 2%;
@@ -115,6 +116,47 @@ div.tiles h4 {
     padding: 2rem 0 0 2%;
     margin: 0;
 }
+main div.services {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+main div.services figure {
+    width: 96%;
+}
+main div.services figure img {
+    width: 100%;
+}
+main div.services figure figcaption {
+    text-align: center;
+    font-size: .7rem;
+}
+/*---------RECEPTiON GALLERY-----------*/
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+div.gallery figure {
+    flex-basis: 96%;
+    margin: 1rem 2%;
+
+}
+
+div.gallery figure img {
+    width: 96%;
+}
+div.gallery figure:hover {
+    box-shadow: none;
+}
+div.gallery figure figcaption {
+    text-align: center;
+}
+
+
+
+
+
 /*----------SLIDESHOW-----------*/
 
 .mySlides {
@@ -174,7 +216,8 @@ main figure.templePhoto img {
     border: #000000 solid 1px;
 }
 .active {
-    background-color: #d8d8d8;
+    background-color: #bbb9b9;
+
 }
 
 /*------------FORMS----------------*/
@@ -236,7 +279,7 @@ form .formButton {
     color: #ffffff;
     display: flex;
     justify-content: center;
-    margin: 1rem 2%;
+    margin: auto;
     font-weight:bold;
     text-decoration: underline;
     max-width: 30rem;

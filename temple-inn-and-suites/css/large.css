@@ -8,7 +8,9 @@ div.myslides {
     max-width: 64rem;
 }
 
-
+div.gallery figure {
+    flex-basis: 29%;
+}
 
 
 

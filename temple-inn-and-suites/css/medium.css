@@ -24,10 +24,28 @@ nav ul.hide {
 .paragraph {
     padding: 2% 15%;
 }
+.indent {
+    padding: 0 25%;
+}
 div form button {
     width: 50%;
     margin: 2% 23% 2rem;
     font-size: 1.6rem
+
+}
+p {
+    font-size: 1.2rem;
+}
+main div.services figure {
+    flex-basis: 34%;
+    margin: 1rem auto;
+}
+main div.services figure figcaption {
+    font-size: 1rem;
+}
+div.gallery figure {
+    flex-basis: 46%;
+    margin: 1rem 2%;
 
 }
 /*div.row section :nth-child(1){
