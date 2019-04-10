@@ -86,10 +86,14 @@ div form button {
 .paragraph {
     text-align: center; 
 }
+
 main h1, main h2, main h3, main h4, main h5, main h6 {
     font-family: 'Poppins', sans-serif;
     color: #116f9e;
     padding: 0 2%;
+}
+.subhead {
+    text-align: center;
 }
 p {
     padding: 0 2%;
@@ -100,7 +104,10 @@ p.thankyou {
 }
 .italic {
     font-style: italic;
+    font-weight: bolder;
+    font-size: 1rem;
 }
+
 div.tiles img {
     margin: 0;
     padding:2%;
@@ -116,18 +123,23 @@ div.tiles h4 {
     padding: 2rem 0 0 2%;
     margin: 0;
 }
-main div.services {
+
+div.missionary, 
+div.services {
     display: flex;
     flex-wrap: wrap;
-
 }
-main div.services figure {
-    width: 96%;
+div.missionary figure, 
+div.services figure {
+    flex-basis: 100%;
+    margin: 1rem 2%;
 }
-main div.services figure img {
+div.missionary figure img,
+div.services figure img {
     width: 100%;
 }
-main div.services figure figcaption {
+div.missionary figure figcaption,
+div.services figure figcaption {
     text-align: center;
     font-size: .7rem;
 }

@@ -7,7 +7,9 @@ header, nav, body, main, footer {
 div.myslides {
     max-width: 64rem;
 }
-
+div.missionary figure {
+    flex-basis: 29%;
+}
 div.gallery figure {
     flex-basis: 29%;
 }
