@@ -330,6 +330,16 @@ footer h4 {
     font-size: .8rem;
 }
 
+p.resources {
+    font-style: italic;
+    font-size: .6rem;
+}
+p.resources a:link {
+    color: #ffffff;
+}
+p.resources a:visited {
+    color: #ffffff;;
+}
 
 .clearfix:after {
     content: "";
