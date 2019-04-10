@@ -2,7 +2,7 @@
 //Anchorage weather conditions
 var weatherRequest = new XMLHttpRequest();
 
-weatherRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zip=99516,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
+weatherRequest.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=99516,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
 
 weatherRequest.send();
 
@@ -18,7 +18,7 @@ weatherRequest.onload = function() {
 //Gilbert Weather Conditions
 var azweatherRequest = new XMLHttpRequest();
 
-azweatherRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zip=85297,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
+azweatherRequest.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=85297,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
 
 azweatherRequest.send();
 
@@ -35,7 +35,7 @@ azweatherRequest.onload = function() {
 //Manhattan Weather conditions
 var nyweatherRequest = new XMLHttpRequest();
 
-nyweatherRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zip=10023,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
+nyweatherRequest.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=10023,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
 
 nyweatherRequest.send();
 
@@ -51,7 +51,7 @@ nyweatherRequest.onload = function() {
 //winter quarters
 var wqweatherRequest = new XMLHttpRequest();
 
-wqweatherRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zip=68112,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
+wqweatherRequest.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=68112,us&appid=51c5895f12b5d16e4a8afa4b12d68ab0&units=imperial', true);
 
 wqweatherRequest.send();
 
