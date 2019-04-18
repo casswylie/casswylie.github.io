@@ -1,0 +1,154 @@
+header {
+    padding: .5rem 2% ;
+    display: grid;
+    grid-template-columns: 130px auto;
+    background-color: #f89ea1;
+    color: #ffffff;
+
+}
+
+header div h1 {
+    line-height: 0px;
+    padding-top: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+header div h3, 
+nav, 
+main,
+footer {
+    font-family: 'Rubik', sans-serif;
+}
+
+nav, 
+main, 
+footer {
+    padding: 0 2%;
+}
+
+nav {
+    background-color: #e3f3fa;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 2%;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    color: #000000/*#8baab5*/;
+}
+
+nav ul li a:hover {
+    background-color: #649faf;
+    color: #ffffff;
+}
+
+.active {
+    background-color: #649faf;
+}
+
+h2 {
+    margin: 2rem 0 .8rem;
+}
+footer {
+    background-color: #f89ea1; 
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+}
+footer a.social img {
+    width: 1.5rem;
+}
+
+footer a.social {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+/*-----------------------MEDIUM SCREENS---------------------------*/
+@media only screen and (min-width: 560px) {
+
+
+nav li {
+    float: left;
+    width: 20%;
+}
+
+nav button {
+    display: none;
+}
+
+nav ul.hide {
+    display: block;
+}
+
+nav {
+    background-color: #e3f3fa;
+}
+
+footer a.social img {
+    width: 2rem;
+    padding: 0 .5rem;
+}
+
+
+
+
+
+
+
+} /*end medium screens*/
+
+
+
+/*-----------------------LARGE SCREENS---------------------------*/
+@media only screen and (min-width: 1028px) {   
+
+
+header, 
+nav, 
+body, 
+main, 
+footer {
+    max-width: 64rem;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+}/*end large screens*/
