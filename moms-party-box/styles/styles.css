@@ -9,10 +9,13 @@ header {
 
 header div h1 {
     line-height: 0px;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     font-family: 'Rubik', sans-serif;
+    font-size: 1.25rem;
 }
-
+header div h3 {
+    font-size: .75rem;
+}
 header div h3, 
 nav, 
 main,
@@ -20,12 +23,13 @@ footer {
     font-family: 'Rubik', sans-serif;
 }
 
-nav, 
 main, 
 footer {
     padding: 0 2%;
 }
-
+main section {
+    margin-bottom: 1rem;
+}
 nav {
     background-color: #e3f3fa;
 }
@@ -81,36 +85,34 @@ figure.banner {
 figure.banner img {
     width: 100%;
 }
-section.home-tiles {
-    display: flex;
-    flex-wrap: wrap;
-}
-/*figure.home-images {
-   /* flex-basis: 50%;
-    margin: 1rem 0;
-    flex-basis: 100%;
-    margin: 1rem 2%;
-}
-
-figure.home-images img {
-    width: 96%;
-     
-}*/
 
 section.home-tiles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-section.home-tiles div.tile {
+section.home-tiles div.tile,
+section.home-tiles div.tile1 {
     float: left;
     width: 96%;
     padding: 0 2%;
 }
 
+ol.getinvolved {
+    margin: 1rem 15%;
+    font-size: 1.1rem;
+}
+ol.getinvolved li {
+    padding: 1rem;
+}
+div.service-events {
+    margin: 1rem 15%;
+}
 form.contact-form fieldset {
+    display: flex;
+    flex-basis: 100%;
     margin: 2rem 0;
-    border: 1px dashed #f5f153;
+    border: 3px dashed #f5f153;
     border-radius: 5px;
     padding: .5rem 2%;
 }
@@ -123,7 +125,7 @@ form.contact-form label textarea {
     margin: 0 0 1rem;
     padding: .75rem;
     color: #555;
-    width: 96%;
+    width: 90%;
     max-width: 30rem;
 }
 form.contact-form label textarea {
@@ -143,7 +145,7 @@ form input.submit {
 footer {
     background-color: #f89ea1; 
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     color: #ffffff;
 }
 footer a.social img {
@@ -168,7 +170,13 @@ footer a.social {
 /*-----------------------MEDIUM SCREENS---------------------------*/
 @media only screen and (min-width: 560px) {
 
-
+header div h1 {
+    font-size:2.25rem;
+    padding-top: 1rem;
+}
+header div h3 {
+    font-size: 1.5rem;
+}
 nav li {
     float: left;
     width: 20%;
@@ -185,17 +193,12 @@ nav ul.hide {
 nav {
     background-color: #e3f3fa;
 }
-/*figure.home-images {
-    flex-basis: 40%;
-}
-figure.home-images img {
-    width: 50%;
-    padding: 0 25%; 
-}*/
+
 section.home-tiles div.tile1 {
     width: 88%;
 }
 
+section.home-tiles div.tile1 h1,
 section.home-tiles div.tile1 h2,
 section.home-tiles div.tile h2 {
     text-align: center;
@@ -230,7 +233,7 @@ nav,
 body, 
 main, 
 footer {
-    max-width: 64rem;
+    max-width: 75rem;
     margin: auto;
 }
 
