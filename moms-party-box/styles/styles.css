@@ -99,12 +99,29 @@ section.home-tiles div.tile1 {
 }
 
 ol.getinvolved {
-    margin: 1rem 15%;
-    font-size: 1.1rem;
+    margin: 1rem 0;
+    font-size: 1rem;
 }
 ol.getinvolved li {
-    padding: 1rem;
+    padding: .5rem;
 }
+ol.getinvolved li a {
+    font-style: italic;
+    color: #649faf;
+}
+ol.getinvolved li a:hover {
+    font-weight: bold;
+    font-style: normal;
+}
+div.contacted p a {
+    font-style: italic;
+    color: #649faf;
+}
+div.contacted p a:hover {
+    font-weight: bold;
+    font-style: normal;
+}
+
 div.service-events {
     margin: 1rem 15%;
 }
@@ -133,7 +150,7 @@ form.contact-form label textarea {
 }
 form input.submit {
     border: none;
-    background-color: #8baab5;
+    background-color: #649faf;
     color: black;
     border-radius: 1rem;
     padding: .75rem;
@@ -208,7 +225,13 @@ section.home-tiles div.tile {
     width: 42%;
     padding: 0 2%;
 }
-
+ol.getinvolved {
+    margin: 1rem 15%;
+    font-size: 1.2rem;
+}
+ol.getinvolved li {
+    padding: .8rem;
+}
 footer a.social img {
     width: 2rem;
     padding: 0 .5rem;
