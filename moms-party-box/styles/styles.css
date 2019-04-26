@@ -256,7 +256,7 @@ nav,
 body, 
 main, 
 footer {
-    max-width: 75rem;
+    max-width: 64rem;
     margin: auto;
 }
 
