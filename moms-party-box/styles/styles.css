@@ -85,7 +85,9 @@ figure.banner {
 figure.banner img {
     width: 100%;
 }
-
+.content-paragraph {
+    text-align: center;
+}
 section.home-tiles {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +114,11 @@ ol.getinvolved li a {
 ol.getinvolved li a:hover {
     font-weight: bold;
     font-style: normal;
+}
+form#donateButton {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
 div.contacted p a {
     font-style: italic;
@@ -196,7 +203,7 @@ header div h3 {
 }
 nav li {
     float: left;
-    width: 20%;
+    width: /*16.66%*/20%;
 }
 
 nav button {
