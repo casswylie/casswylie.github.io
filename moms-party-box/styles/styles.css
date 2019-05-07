@@ -69,6 +69,12 @@ nav ul li a:hover {
 .active {
     background-color: #649faf;
 }
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
 
 h2 {
     margin: 2rem 0 .8rem;
@@ -107,13 +113,26 @@ ol.getinvolved {
 ol.getinvolved li {
     padding: .5rem;
 }
-ol.getinvolved li a {
+ol.getinvolved li a,
+.tile.content-paragraph a:hover {
     font-style: italic;
     color: #649faf;
 }
-ol.getinvolved li a:hover {
+ol.getinvolved li a:hover,
+.tile.content-paragraph a:hover{
     font-weight: bold;
     font-style: normal;
+}
+.tile.content-paragraph {
+    font-size: 1.5rem;
+    color: #649faf;
+    font-weight: bold;
+}
+div.gmap_canvas {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    padding: 1rem 0;
 }
 form#donateButton {
     display: flex;
@@ -129,9 +148,6 @@ div.contacted p a:hover {
     font-style: normal;
 }
 
-div.service-events {
-    margin: 1rem 15%;
-}
 form.contact-form fieldset {
     display: flex;
     flex-basis: 100%;
@@ -232,12 +248,21 @@ section.home-tiles div.tile {
     width: 42%;
     padding: 0 2%;
 }
+div.service-events {
+    margin: 1rem 15%;
+}
 ol.getinvolved {
     margin: 1rem 15%;
     font-size: 1.2rem;
 }
 ol.getinvolved li {
     padding: .8rem;
+}
+div.gmap_canvas {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    padding: 1rem 0;
 }
 footer a.social img {
     width: 2rem;
@@ -260,7 +285,7 @@ footer a.social img {
 
 header, 
 nav, 
-body, 
+body,
 main, 
 footer {
     max-width: 64rem;
