@@ -114,7 +114,7 @@ ol.getinvolved li {
     padding: .5rem;
 }
 ol.getinvolved li a,
-.tile.content-paragraph a:hover {
+.tile.content-paragraph a {
     font-style: italic;
     color: #649faf;
 }
@@ -122,6 +122,11 @@ ol.getinvolved li a:hover,
 .tile.content-paragraph a:hover{
     font-weight: bold;
     font-style: normal;
+}
+.birthdaylist {
+    display: block;
+    padding: 2% 4.5rem;
+    text-align: center;
 }
 .tile.content-paragraph {
     font-size: 1.5rem;
@@ -139,6 +144,7 @@ form#donateButton {
     justify-content: center;
     padding: 2rem;
 }
+/*
 div.contacted p a {
     font-style: italic;
     color: #649faf;
@@ -181,6 +187,16 @@ form input.submit {
     width: 96%;
     max-width: 30rem;
     cursor: pointer;
+}*/
+div.contact-info {
+    text-align: center;
+    padding-top: 1rem;
+}
+div.contact-info section {
+    padding: .75rem 0 0;
+}
+div.contact-info h3 {
+    text-decoration: underline;
 }
 footer {
     background-color: #f89ea1; 
