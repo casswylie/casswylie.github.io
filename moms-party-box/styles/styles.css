@@ -198,6 +198,24 @@ div.contact-info section {
 div.contact-info h3 {
     text-decoration: underline;
 }
+div.thankyou-banner,
+div.logos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    text-align: center;
+}
+div.thankyou-banner figure,
+div.logos figure {
+    width:96%;
+    margin: 1rem 0;
+    padding: 0 2%;
+}
+div.thankyou-banner figure img,
+div.logos figure img {
+    width: 100%;
+}
+
 footer {
     background-color: #f89ea1; 
     text-align: center;
@@ -280,6 +298,17 @@ div.gmap_canvas {
     justify-content: center;
     padding: 1rem 0;
 }
+div.thankyou-banner,
+div.logos {
+    flex-basis: 100%;
+    
+}
+
+div.logos figure {
+    width: 42%;
+    margin: 1rem 0;
+}
+
 footer a.social img {
     width: 2rem;
     padding: 0 .5rem;
@@ -306,6 +335,19 @@ main,
 footer {
     max-width: 64rem;
     margin: auto;
+}
+div.thankyou-banner,
+div.logos {
+    flex-basis: 100%;
+    
+}
+div.thankyou-banner figure {
+    width: 70%;
+    margin: 1rem auto 5rem;
+}
+div.logos figure {
+    width: 21%;
+
 }
 
 
