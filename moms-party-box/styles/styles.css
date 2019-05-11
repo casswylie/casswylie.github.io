@@ -170,17 +170,25 @@ form#donateButton {
     display: flex;
     justify-content: center;
     padding: 2rem;
+    
+}
+form#donateButton input.donateimage {
+    width: 200px;
+    height: 64px;
+
+}
+div.donate-image {
+    margin: 2rem 2%;
 }
 div.donate-image figure{
     width: 100%;
     margin: auto;
-    padding: 1rem 0;
+    
 }
-
-
 div.donate-image figure img {
     width: 100%;
 }
+
 /*----------CONTACT PAGE------------*/
 div.contact-info {
     text-align: center;
@@ -264,7 +272,7 @@ header div h3 {
 }
 nav li {
     float: left;
-    width: /*16.66%*/20%;
+    width: 16.66%;
 }
 
 nav button {
