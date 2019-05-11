@@ -82,7 +82,7 @@ h2 {
 h2.page-header {
     text-align: center;
 }
-
+/*------------HOME PAGE----------*/
 figure.banner {
     flex-basis: 100%;
     margin: 1rem 0;
@@ -105,7 +105,10 @@ section.home-tiles div.tile1 {
     width: 96%;
     padding: 0 2%;
 }
-
+div.instagram-embed {
+    margin: 5rem 2% 2rem;
+}
+/*--------GET INVOLVED PAGE--------*/
 ol.getinvolved {
     margin: 1rem 0;
     font-size: 1rem;
@@ -129,14 +132,14 @@ ol.getinvolved li a:hover,
     text-align: center;
 }
 div.involved-photos figure {
-
     width: 96%;
-    padding: 0 2%;
+    padding: 2%;
     margin: 0;
 }
 div.involved-photos figure img {
     width: 100%;
 }
+/*-----------EVENT PAGE-------------*/
 .tile.content-paragraph {
     font-size: 1.5rem;
     color: #649faf;
@@ -148,55 +151,23 @@ div.gmap_canvas {
     justify-content: center;
     padding: 1rem 0;
 }
+/*-------------DONATE PAGE------------*/
 form#donateButton {
     display: flex;
     justify-content: center;
     padding: 2rem;
 }
-/*
-div.contacted p a {
-    font-style: italic;
-    color: #649faf;
-}
-div.contacted p a:hover {
-    font-weight: bold;
-    font-style: normal;
+div.donate-image figure{
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
 }
 
-form.contact-form fieldset {
-    display: flex;
-    flex-basis: 100%;
-    margin: 2rem 0;
-    border: 3px dashed #f5f153;
-    border-radius: 5px;
-    padding: .5rem 2%;
+
+div.donate-image figure img {
+    width: 100%;
 }
-form.contact-form label input,
-form.contact-form label textarea {
-    display: block;
-    font-size: 1rem;
-    border: solid 1px black;
-    border-radius: 3px;
-    margin: 0 0 1rem;
-    padding: .75rem;
-    color: #555;
-    width: 90%;
-    max-width: 30rem;
-}
-form.contact-form label textarea {
-    height: 200px;
-}
-form input.submit {
-    border: none;
-    background-color: #649faf;
-    color: black;
-    border-radius: 1rem;
-    padding: .75rem;
-    margin: 2rem 0 2rem 2%;
-    width: 96%;
-    max-width: 30rem;
-    cursor: pointer;
-}*/
+/*----------CONTACT PAGE------------*/
 div.contact-info {
     text-align: center;
     padding-top: 1rem;
@@ -207,6 +178,7 @@ div.contact-info section {
 div.contact-info h3 {
     text-decoration: underline;
 }
+/*-------------THANK YOU PAGE-----------*/
 div.thankyou-banner {
     margin-top:2rem;
 }
@@ -238,9 +210,9 @@ div.logos figure figcaption {
     font-size: .75rem;
 }
 
-div.instagram-embed {
-    margin: 5rem 2% 2rem;
-}
+
+
+
 footer {
     background-color: #f89ea1; 
     text-align: center;
@@ -317,9 +289,15 @@ ol.getinvolved {
 ol.getinvolved li {
     padding: .8rem;
 }
-div.involved-photos figure {
-    width: 33%;
+div.involved-photos  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
 }
+div.involved-photos figure {
+    width: 29%;
+}
+
 
 div.gmap_canvas {
     display: flex;
@@ -327,6 +305,11 @@ div.gmap_canvas {
     justify-content: center;
     padding: 1rem 0;
 }
+div.donate-image figure{
+    width: 75%;
+}
+
+/*------THANK YOU-----------*/
 div.thankyou-banner,
 div.logos {
     flex-basis: 100%;
@@ -369,6 +352,9 @@ main,
 footer {
     max-width: 64rem;
     margin: auto;
+}
+div.donate-image figure{
+    width: 50%;
 }
 div.thankyou-banner,
 div.logos {
