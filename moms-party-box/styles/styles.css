@@ -128,6 +128,15 @@ ol.getinvolved li a:hover,
     padding: 2% 4.5rem;
     text-align: center;
 }
+div.involved-photos figure {
+
+    width: 96%;
+    padding: 0 2%;
+    margin: 0;
+}
+div.involved-photos figure img {
+    width: 100%;
+}
 .tile.content-paragraph {
     font-size: 1.5rem;
     color: #649faf;
@@ -198,24 +207,40 @@ div.contact-info section {
 div.contact-info h3 {
     text-decoration: underline;
 }
+div.thankyou-banner {
+    margin-top:2rem;
+}
 div.thankyou-banner,
 div.logos {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
     text-align: center;
+
 }
-div.thankyou-banner figure,
+div.thankyou-banner figure {
+    width: 100%;
+}
 div.logos figure {
     width:96%;
     margin: 1rem 0;
-    padding: 0 2%;
+    padding: 1rem 2%;
+
 }
 div.thankyou-banner figure img,
 div.logos figure img {
     width: 100%;
 }
+div.logos figure figcaption {
+    padding: .5rem 0 0;
+    font-style: italic;
+    color: black;
+    font-size: .75rem;
+}
 
+div.instagram-embed {
+    margin: 5rem 2% 2rem;
+}
 footer {
     background-color: #f89ea1; 
     text-align: center;
@@ -292,6 +317,10 @@ ol.getinvolved {
 ol.getinvolved li {
     padding: .8rem;
 }
+div.involved-photos figure {
+    width: 33%;
+}
+
 div.gmap_canvas {
     display: flex;
     flex-basis: 100%;
@@ -303,12 +332,17 @@ div.logos {
     flex-basis: 100%;
     
 }
-
+div.thankyou-banner figure {
+    width: 70%;
+    margin: 1rem auto 5rem;
+}
 div.logos figure {
     width: 42%;
     margin: 1rem 0;
 }
-
+div.instagram-embed {
+    margin: 5rem 15% 2rem;
+}
 footer a.social img {
     width: 2rem;
     padding: 0 .5rem;
@@ -330,7 +364,7 @@ footer a.social img {
 
 header, 
 nav, 
-body,
+
 main, 
 footer {
     max-width: 64rem;
@@ -341,10 +375,7 @@ div.logos {
     flex-basis: 100%;
     
 }
-div.thankyou-banner figure {
-    width: 70%;
-    margin: 1rem auto 5rem;
-}
+
 div.logos figure {
     width: 21%;
 
