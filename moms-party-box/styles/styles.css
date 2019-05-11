@@ -44,7 +44,7 @@ nav button {
 
 nav ul {
     list-style-type: none;
-    padding: 0 2%;
+    padding: 0;
     margin: 0;
     text-align: center;
 }
