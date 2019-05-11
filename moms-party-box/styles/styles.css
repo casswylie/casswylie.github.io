@@ -131,6 +131,9 @@ ol.getinvolved li a:hover,
     padding: 2% 4.5rem;
     text-align: center;
 }
+div.involved-photos {
+    margin: 1rem 0;
+}
 div.involved-photos figure {
     width: 96%;
     padding: 2%;
@@ -149,7 +152,18 @@ div.gmap_canvas {
     display: flex;
     flex-basis: 100%;
     justify-content: center;
-    padding: 1rem 0;
+    padding: 1rem 2%;
+}
+div.service-photos {
+    margin: 1rem 0;
+}
+div.service-photos figure {
+    width: 96%;
+    padding: 2%;
+    margin: 0;
+}
+div.service-photos figure img {
+    width: 100%;
 }
 /*-------------DONATE PAGE------------*/
 form#donateButton {
@@ -264,7 +278,7 @@ nav ul.hide {
 nav {
     background-color: #e3f3fa;
 }
-
+/*--------HOME PAGE-----------*/
 section.home-tiles div.tile1 {
     width: 88%;
 }
@@ -279,9 +293,11 @@ section.home-tiles div.tile {
     width: 42%;
     padding: 0 2%;
 }
-div.service-events {
-    margin: 1rem 15%;
+div.instagram-embed {
+    margin: 5rem 15% 2rem;
 }
+
+/*-----------GET INVOLVED PAGE-----------*/
 ol.getinvolved {
     margin: 1rem 15%;
     font-size: 1.2rem;
@@ -298,6 +314,10 @@ div.involved-photos figure {
     width: 29%;
 }
 
+/*-----------EVENT PAGE------------*/
+div.service-events {
+    margin: 1rem 15%;
+}
 
 div.gmap_canvas {
     display: flex;
@@ -305,6 +325,17 @@ div.gmap_canvas {
     justify-content: center;
     padding: 1rem 0;
 }
+
+div.service-photos  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+div.service-photos figure {
+    width: 29%;
+}
+
+/*-----DONATE PAGE-------*/
 div.donate-image figure{
     width: 75%;
 }
@@ -323,9 +354,10 @@ div.logos figure {
     width: 42%;
     margin: 1rem 0;
 }
-div.instagram-embed {
-    margin: 5rem 15% 2rem;
-}
+
+
+
+
 footer a.social img {
     width: 2rem;
     padding: 0 .5rem;
@@ -353,18 +385,19 @@ footer {
     max-width: 64rem;
     margin: auto;
 }
+
 div.donate-image figure{
     width: 50%;
 }
+
+
+
 div.thankyou-banner,
 div.logos {
-    flex-basis: 100%;
-    
+    flex-basis: 100%; 
 }
-
 div.logos figure {
     width: 21%;
-
 }
 
 
