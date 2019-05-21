@@ -75,6 +75,9 @@ nav ul li a:hover {
 .bold {
     font-weight: bold;
 }
+.center {
+    text-align: center;
+}
 
 h2 {
     margin: 2rem 0 .8rem;
